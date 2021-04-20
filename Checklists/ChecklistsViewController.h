@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemDetailViewController.h"
+#import "Checklist.h"//注意在这里要把head文件加进去
+@interface ChecklistsViewController : UITableViewController <ItemDetailViewControllerDelegate>
 
-@interface ChecklistsViewController : UIViewController
+@property (nonatomic,strong) Checklist *checklist;
+//增加property checklist
 
 @end
